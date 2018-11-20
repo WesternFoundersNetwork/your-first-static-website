@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Noto+Sans+SC|Sedgwick+Ave');
+
+html, body, .container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    background: url("img/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+p {
+    font-family: "Noto Sans SC", sans-serif;
+    color: white;
+
+}
+.container {
+    margin: auto;
+    max-width: 66%;
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    display: table;
+}
+
+.container .inner {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: table-row;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.container .inner .content {
+    margin: 0 48px;
+    padding: 0 32px 32px 24px;
+}
+
+h1 {
+    font-size: 3.2em;
+    font-family: 'Sedgwick Ave', serif;
+
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: "Sedgwick Ave", sans-serif;
+}
+
+p {
+    font-size: 1em
+}
+
+i.fa {
+    padding: 0 8px;
+    color: #FFF;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+
+i.fa:hover {
+    color: rgba(85, 120, 157, 100);
+}
+
+.box-img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .container .inner .content {
+        margin: 0 16px;
+        padding: 0;
+        min-width: 320px;
+    }
+
+    i.fa {
+        font-size: 2.5em;
+    }
+
+}
