@@ -1,26 +1,41 @@
-
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC|Sedgwick+Ave');
-
-html, body, .container {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC|Sedgwick+Ave");
 
 body {
-    background: url("img/background.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+  background: url("https://i.lensdump.com/i/ABr2Mc.jpg") no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-p {
-    font-family: "Noto Sans SC", sans-serif;
-    color: white;
-
+h1, h2, p, ul, ol, li {
+  color: white;
 }
+
+p, ul, ol, li {
+  font-family: "Noto Sans SC", sans-serif;
+  font-size: 1em;
+}
+
+h1, h2 {
+  font-family: "Sedgwick Ave", serif;
+}
+
+h1 {
+  font-size: 2.7em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+html, body, .container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 .container {
     margin: auto;
     max-width: 66%;
@@ -43,68 +58,92 @@ p {
     padding: 0 32px 32px 24px;
 }
 
-h1 {
-    font-size: 3.2em;
-    font-family: 'Sedgwick Ave', serif;
-
+/* Changes the default look of an icon */
+p a:link {
+  color: white;
+  font-weight: bold;
 }
 
-h2 {
-    font-size: 1.5em;
-    font-family: "Sedgwick Ave", sans-serif;
+/* Changes another default property  */
+p a:visited {
+  color: white;
 }
 
-p {
-    font-size: 1em
+/*.. and one more time  */
+p a:hover {
+  color: white;
+  background-color: rgb(251, 226, 115);
 }
 
+/* Spaces the icons out and changes the colour of the icons */
+/* Gives us a transition effect on all the icons */
 i.fa {
-    padding: 0 8px;
-    color: #FFF;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
+  padding: 0 15px;
+  color: #fff;
+
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
 }
 
-i.fa:hover {
-    color: rgba(85, 120, 157, 100);
+/*When you hover over the icon it'll change to its company's colour.  */
+i.fa-twitter:hover {
+  color: rgb(75, 160, 235);
 }
 
+/*Same for instagram */
+i.fa-instagram:hover {
+  color: rgb(200, 75, 101);
+}
+
+/*Same for youtube */
+i.fa-youtube:hover {
+  color: rgb(234, 50, 35);
+}
+
+/*Same for linked in */
+i.fa-soundcloud:hover {
+  color: rgb(236, 97, 43);
+}
+
+/* Altering the default image with CSS. Once again the additional border-radius just allows us to standardize sizes on different screen sizes.  */
 .box-img {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  
+  width: 15em;
+  height: 15em;
+  
+  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* On screens less than or equal to 900px do the set the following attributes. */
 @media only screen and (max-width: 900px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .container {
-        max-width: 90%;
-    }
-
-    .container .inner .content {
-        margin: 0 16px;
-        padding: 0;
-        min-width: 320px;
-    }
-
-    i.fa {
-        font-size: 2.5em;
-    }
-
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  
+  .container {
+    max-width: 90%
+  }
+  
+  .container .inner .content {
+    padding: 0;
+    min-width: 320px;
+    margin: 0 16px 10%;
+  }
+  
+  i.fa {
+    font-size: 2.5em;
+  }
 }
